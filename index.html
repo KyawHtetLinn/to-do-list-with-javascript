@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="./script.js"></script> -->
+    <script src="https://kit.fontawesome.com/914cfb089b.js" crossorigin="anonymous"></script>
+    <title>Assignment-3</title>
+</head>
+<body>
+    <li class="header">
+        <ul id="box1" class="box1" onclick="alert()">Alert Box</ul>
+        <ul id="box2" class="box" onclick="todo()">Todo</ul>
+        <ul id="box3" class="box" onclick="form()">Form</ul>
+    </li>
+
+    <div class="alertdiv" id="alertDiv">
+        <p id="dialog" onclick="openDialog()">Open dialog</p>
+        <div id="dialogbox">
+            <h3 style="margin: 12px 5px;">Payment successful</h3>
+            <p style="margin: 10px 5px; line-height: 20px ; font-size: 13px;">Your payment has been successfully submitted.We've sent you an email with all of the detail of your order.</p>
+            <p class="diacl" onclick="closeDialog()">Got it,thanks</p>
+        </div>
+    </div>
+    <div class="tododiv" id="todoDiv">
+        <h2 style="text-align: center;">Todo App</h2>
+        <input type="text" name="searchTodo" id="searchTodo"  class="todoIp" placeholder="Search Todo.."><br>
+        <div id="todoLists" style="margin-left: 20px;"></div>
+        <input type="text" name="addTodo" id="newTodo" class="todoIp" placeholder="Enter New Todo.." >
+        <p style="font-size: 11px;color: red; margin: 0 0 0 10px;visibility:hidden;" id="todoWarn">* Please enter the Todo name *</p>
+        <button type="button" id="addButton">Add Todo</button>
+    </div>
+    <div class="formdiv" id="formDiv">
+        <h3 style="margin-left: 20px;">Login</h3>
+        <form id="form" action="/" method="GET">
+            <label for="name" style="margin-left: 20px;">Name</label>
+            <input type="text" name="loginName" id="name" class="formIp">
+            <p class="formWarn" id="nameWarn">Name must include a lowercase letter and a number</p>
+            <label for="email" style="margin-left: 20px;">Email</label>
+            <input type="email" name="loginEmail" id="email" class="formIp">
+            <p class="formWarn" id="emailWarn">Invalid email format</p>
+            <label for="password" style="margin-left: 20px;">Password</label>
+            <input type="password" name="loginPassword" id="password" class="formIp">
+            <p class="formWarn" id="passwordWarn">Password must be at least 6 characters</p>
+            <button type="submit" class="loginBt" id="submit">Log in</button>
+        </form>
+        
+    </div>
+</body>
+<script src="./script.js"></script>
