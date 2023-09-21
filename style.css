@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* font-size: 16px; */
+}
+
+.header{
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    margin: 10px 15px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.box{
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.box1{
+    padding: 10px 20px;
+    margin: 0;
+    color:blue;
+    border-bottom: 2px solid blue;
+}
+
+.box:hover{
+    cursor: default;
+}
+
+.alertdiv{
+    /* background-color: aqua; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility:visible;
+}
+
+#dialog{
+    position: relative;
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: blue;
+    /* visibility: hidden; */
+}
+#dialog:hover{
+    cursor: default;
+    background-color: rgb(187, 187, 187);
+}
+
+#dialogbox{
+    position: absolute;
+    top: 40%;
+    background-color: white;
+    padding: 10px 15px;
+    width: 500px;
+    border-radius: 10px;
+    visibility: hidden;
+    box-shadow: 20px 18px 23px 0px rgba(0,0,0,0.2);
+}
+
+.diacl{
+    margin: 10px 5px; 
+    padding: 10px 10px;
+    background-color: #b2cdf3;
+    color: blue ;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 14px;
+    /* font-weight: bold; */
+}
+.diacl:hover{
+    cursor: default;
+    background-color: #a3c4f1;
+
+}
+
+.tododiv{
+    /* background-color:lightgreen; */
+    position:absolute;
+    top: 20%;
+    right:0;
+    left: 0;
+    margin: 0 auto;
+    width: 300px;    
+    /* padding: 20px; */
+    visibility: hidden;
+}
+
+::placeholder{
+    color: grey;
+}
+
+.todoIp{
+    padding: 7px 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 5px 10px;
+    width: 85%;
+    margin-left: 20px;
+}
+
+#addButton{
+    padding:7px 10px;
+    margin: 10px;
+    color: white;
+    background-color:dodgerblue;
+    border-radius: 3px;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+#addButton:hover{
+    background-color:rgb(64, 157, 250);
+}
+
+.formdiv{
+    /* background-color: aqua; */
+    position:absolute;
+    top: 20%;
+    right:0;
+    left: 0;
+    margin: 0 auto;
+    width: 300px;  
+    visibility: hidden;
+}
+
+.loginBt{
+    padding: 7px 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 5px 10px;
+    width: 85%;
+    margin-left: 20px;
+    background-color: rgb(33, 94, 226);
+    color:white;
+    font-weight: bold;
+}
+.loginBt:hover{
+    background-color: rgb(66, 118, 231);
+}
+
+.formIp{
+    padding: 7px 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin: 5px 10px 1px 10px;
+    width: 85%;
+    margin-left: 20px;
+}
+
+.formWarn{
+    margin:1px 1px 10px 20px;
+    font-size: 12px;
+    color: red;
+    visibility: hidden;
+}
